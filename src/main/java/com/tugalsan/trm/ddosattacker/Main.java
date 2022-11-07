@@ -9,11 +9,10 @@ public class Main {
 
     public static void main(String... args) {
         var url = TGS_Url.of("https://tugalsan.com:8443");
-        IntStream.range(0, 2000).parallel().forEach(i -> TS_ThreadRun.now(() -> {
+        IntStream.range(0, 2000).forEach(i -> TS_ThreadRun.now(() -> {
             while (true) {
                 TS_UrlDDosUtils.attack(url);
             }
         }));
     }
-
 }
