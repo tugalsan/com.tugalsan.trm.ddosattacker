@@ -1,6 +1,7 @@
 package com.tugalsan.trm.ddosattacker;
 
-import com.tugalsan.api.thread.server.*;
+import com.tugalsan.api.thread.server.async.TS_ThreadAsync;
+import com.tugalsan.api.thread.server.TS_ThreadWait;
 import com.tugalsan.api.url.client.*;
 import com.tugalsan.api.url.server.*;
 import java.util.stream.*;
@@ -11,7 +12,7 @@ public class Main {
 
     public static void main(String... args) {
         var url = TGS_Url.of("https://localhost:8081/hello1");
-        IntStream.range(0, 2000000).forEach(i -> TS_ThreadRun.now(() -> {
+        IntStream.range(0, 2000000).forEach(i -> TS_ThreadAsync.now(() -> {
             while (true) {
                 TS_UrlDDosUtils.attack(url);
                 System.out.println(".");
