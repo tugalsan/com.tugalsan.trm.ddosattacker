@@ -1,6 +1,6 @@
 package com.tugalsan.trm.ddosattacker;
 
-import com.tugalsan.api.thread.server.struct.async.TS_ThreadAsync;
+import com.tugalsan.api.thread.server.async.TS_ThreadAsync;
 import com.tugalsan.api.thread.server.TS_ThreadWait;
 import com.tugalsan.api.url.client.*;
 import com.tugalsan.api.url.server.*;
