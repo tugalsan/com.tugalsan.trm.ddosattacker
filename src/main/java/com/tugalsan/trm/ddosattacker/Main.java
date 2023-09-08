@@ -10,7 +10,7 @@ import java.util.stream.*;
 
 public class Main {
     //cd C:\me\codes\com.tugalsan\trm\com.tugalsan.trm.ddosattacker
-    //java --enable-preview --add-modules jdk.incubator.concurrent -jar target/com.tugalsan.trm.ddosattacker-1.0-SNAPSHOT-jar-with-dependencies.jar
+    //java --enable-preview --add-modules jdk.incubator.vector -jar target/com.tugalsan.trm.ddosattacker-1.0-SNAPSHOT-jar-with-dependencies.jar
 
     final private static TS_Log d = TS_Log.of(Main.class);
     final private static TS_ThreadSyncTrigger killTrigger = TS_ThreadSyncTrigger.of();
