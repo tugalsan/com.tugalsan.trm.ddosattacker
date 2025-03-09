@@ -13,7 +13,7 @@ public class Main {
     //java --enable-preview --add-modules jdk.incubator.vector -jar target/com.tugalsan.trm.ddosattacker-1.0-SNAPSHOT-jar-with-dependencies.jar
 
     final private static TS_Log d = TS_Log.of(Main.class);
-    final private static TS_ThreadSyncTrigger killTrigger = TS_ThreadSyncTrigger.of();
+    final private static TS_ThreadSyncTrigger killTrigger = TS_ThreadSyncTrigger.of("main");
 
     public static void main(String... args) {
         var url = TGS_Url.of("https://localhost:8081/hello1");
